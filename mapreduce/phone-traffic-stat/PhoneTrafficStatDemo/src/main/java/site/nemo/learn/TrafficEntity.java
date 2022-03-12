@@ -57,4 +57,11 @@ public class TrafficEntity implements Writable {
         this.downloadTraffic = dataInput.readLong();
         this.totalTraffic = dataInput.readLong();
     }
+
+    @Override
+    public String toString() {
+        return "" + uploadTraffic +
+                "\t" + downloadTraffic +
+                "\t" + totalTraffic;
+    }
 }
